@@ -1,43 +1,40 @@
 ## 📦 Minipack
 
 > A simplified example of a modern module bundler written in JavaScript
+> 
+> 一个用 JS 编写的现代模块打包器的简化示例
 
-### Introduction
+[项目地址](https://github.com/ronami/minipack)
 
-As front-end developers, we spend a lot of time working with tools like [Webpack](https://github.com/webpack/webpack), [Browserify](https://github.com/browserify/browserify), and [Parcel](https://github.com/parcel-bundler/parcel).
+### 简介
 
-Understanding how those tools work can help us make better decisions on how we write our code. By understanding how our code turns into a bundle and how that bundle looks like we can also debug it better.
+作为前端开发者，工作中会花费大量的时间在 Webpack、Browserify 和 Parcel 工具上。
 
-The purpose of this project is to explain how most bundlers work under the hood. It contains a short implementation of a simplified but still reasonably accurate bundler. Along with the code, there are comments explaining what the code is trying to achieve.
+理解这些工具是如何工作的可以帮助我们更好的编写代码。通过理解我们的代码是如何变为 Bundle 以及 Bunlde 的样子，有助于更好的调试代码。
 
-### Cool, where do I start?
+这个项目的目的是解释大多数打包程序是如何在内部工作的。它包含了一个简化的但仍然相当准确的捆绑程序的简短实现。伴随着代码，还有注释解释代码试图实现什么。
 
-Head on to the source code: [src/minipack.js](src/minipack.js).
+### 听起来很酷，那我们从哪里开始呢？
 
-### Try running the code
+直接重看源码: [src/minipack.js](src/minipack.js).
 
-Start by installing dependencies:
+### 尝试运行源码
+
+首先安装依赖：
 
 ```sh
 $ npm install
 ```
-
-And then run our script:
+然后运行
 
 ```sh
 $ node src/minipack.js
 ```
 
-### Additional links
+### 额外链接
 
-- [AST Explorer](https://astexplorer.net)
+- [AST Explorer](https://astexplorer.net) : 可以查看 JS 解析成 AST 时数据结构
 - [Babel REPL](https://babeljs.io/repl)
-- [Babylon](https://github.com/babel/babel/tree/master/packages/babel-parser)
+- [Babylon](https://github.com/babel/babel/tree/master/packages/babel-parser) ：生成 AST
 - [Babel Plugin Handbook](https://github.com/thejameskyle/babel-handbook/blob/master/translations/en/plugin-handbook.md)
 - [Webpack: Modules](https://webpack.js.org/concepts/modules)
-
-### Read this in other languages
-
-- [한글/Korean](https://github.com/hg-pyun/minipack-kr)
-- [中文/Chinese](https://github.com/chinanf-boy/minipack-explain)
-- [Русский/Russian](https://github.com/makewebme/build-your-own-webpack)
