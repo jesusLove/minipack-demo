@@ -42,7 +42,7 @@ $ node src/minipack.js
 <hr/>
 
 # 阅读笔记
-## 创建资源 Asset 
+## 一、创建资源 Asset 
 
 每一个 module 都会生成一个 Asset 对象，对象中保存资源的 id，filename, 依赖关系，以及 babel 转码后的 code 。
 
@@ -127,7 +127,7 @@ function createAsset(filename) {
 6. 返回 Asset 对象，包含 id, filename, dependencies, code。
 
 
-## 生成依赖图谱
+## 二、生成依赖图谱
 
 从主 mainAsset 开始，遍历所有 module 的依赖创建 childAsset 并将其推入队列中。
 
@@ -166,7 +166,7 @@ function createGraph(entry) {
 3. for...of 队列内容，根据 dependencies 数组创建依赖的 Asset 边推入到 queue 中。
 
 
-## 处理依赖图谱，返回自调用函数
+## 三、处理依赖图谱，返回自调用函数
 
 返回一个自调用函数，浏览器可以直接执行。 自调用函数如下结构：
 
